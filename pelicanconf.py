@@ -7,6 +7,7 @@ SITENAME = 'Atlas Labs'
 SITEURL = ''
 
 PATH = 'content'
+THEME = 'pelican-alchemy/alchemy'
 
 TIMEZONE = 'Europe/Paris'
 
