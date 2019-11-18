@@ -1,3 +1,48 @@
+/* Global Styles */
+@import url("//fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans");
+html,body {
+  font-family:"Josefin Sans", sans-serif;
+  font-size:100%;
+  height:100%;
+  line-height:1.45;
+}
+/* Video Overlay */
+
+#overlay {
+  background-color:rgba(0,0,0,0);
+  height:100%;
+  left:0;
+  position:relative;
+  top:0;
+  transition:background-color 300ms ease;
+  width:100%;
+}
+.fade { background-color:rgba(0,0,0,0) !important; }
+
+/* Hero Video + Fallback */
+#hero-vid {
+  backface-visibility:hidden;
+  background:url("http://www.markhillard.com/sandbox/media/polina.jpg") no-repeat scroll 0 0 #000;
+  background-size:cover;
+  bottom:0;
+  height:auto;
+  min-height:100%;
+  min-width:100%;
+  perspective:1000;
+  position:fixed;
+  right:0;
+  width:auto;
+  z-index:-1;
+}
+
+#content {
+  background-color:white;
+  padding:2.5rem;
+  position:relative;
+  z-index:1;
+}
+
+
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -159,25 +204,28 @@ ul ul a {
 #VideoBG {
     filter: opacity(75%);
     z-index:-1;
-    position: fixed;
+    position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     /* max-width: 100%; */
-    min-height: 100%;
 }
 
 /* Headline animation 
 -------------------------------------------------- */
-#headline {
+#state {
   font-family: arial;
-  color: black;
-  font-size: 3.5rem;
+  color: white;
+  font-size: 9.5rem;
   text-align: center;
   text-shadow: 0 2px 0 rgba(0,0,0,.5);
 }
 
-#headline span:after {
+#state span:after {
   text-color: white;
+  font-size: 7.5rem;
   position: relative;
   content: 'a full stack data scientist';
   -webkit-animation: 8s animate infinite ease-in-out;
@@ -185,19 +233,19 @@ ul ul a {
 
 @-webkit-keyframes animate {
   0% {
-    content: 'a financial analyst';
+    content: 'a place to create';
   }
-  25% {
-    content: 'a data visualization expert';
+  20% {
+    content: 'and to build';
   }
-  50% {
-    content: 'a deep learning engineer';
+  40% {
+    content: 'a community to belong to';
   }
-  75% {
-    content: 'a full-stack data scientist';
+  60% {
+    content: 'and contribute to';
   }
-  100% {
-    content: 'a financial analyst';
+  800% {
+    content: 'an entrepreunerial state of mind';
   }
 }
 
