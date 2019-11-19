@@ -37,19 +37,19 @@ ga('send', 'pageview');
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#hero-vid">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Membership</a>
+              <a class="nav-link" href="#membership">Membership</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disaled" href="#">Events</a>
+              <a class="nav-link disaled" href="#events">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">About</a>
@@ -70,52 +70,64 @@ ga('send', 'pageview');
     </div>
 
     <div id="content">
-      <H2>Membership</H2>
+      <H2 id='membership'>Membership</H2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
       velit dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque
       accumsan quis urna sed imperdiet. Quisque sapien libero, bibendum quis
 
-      <H2>Events</H2>
+      <H2 id='events'>Events</H2>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit
       fringilla at, maximus eget arcu.
       </p>
       <H2>Features</H2>
       <p>
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit
-     dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque accumsan
-     quis urna sed imperdiet. Quisque sapien libero, bibendum quis pretium
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit
+      dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque accumsan
+      quis urna sed imperdiet. Quisque sapien libero, bibendum quis pretium
       </p>
       <H2>Pricing</H2>
-      <table>
-        <tr>
-          <th>Days</th>
-          <th>Monthly Cost</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>60</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>110</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>150</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>175</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>200</td>
-        </tr>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
       </table>
+
       <p></p>
       <H2>About</H2>
-      <p></p>
+      <p>Here we explain something derived from our mission thesis, but less
+      technical, more catchy. short.</p>
+
+      <footer class="footer bg-transparant text-center w-100">
+        <span class="text-dark" >footer text</span>
+      </footer>
     </div>
 
 
