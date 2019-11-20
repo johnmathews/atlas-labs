@@ -10,13 +10,13 @@ endif
 set shortmess=aoO
 badd +1 index.html
 badd +3 firebase.json
-badd +105 public/index.html
+badd +63 public/index.html
 badd +225 public/static/custom.css
-badd +1 public/static/vid.js
+badd +2 public/static/vid.js
 badd +40 mission-thesis.md
 argglobal
 silent! argdel *
-edit public/index.html
+edit public/static/custom.css
 set splitbelow splitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
@@ -30,12 +30,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 62 - ((29 * winheight(0) + 17) / 35)
+let s:l = 24 - ((23 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-62
-normal! 071|
+24
+normal! 023|
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

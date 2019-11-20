@@ -21,8 +21,7 @@ html,body {
 
 /* Hero Video + Fallback */
 #hero-vid {
-  backface-visibility:hidden;
-  background:url() no-repeat scroll 0 0 #000;
+  background:url('static/waterfall_still2/png') no-repeat scroll 0 0 #000;
   background-size:cover;
   bottom:0;
   height:auto;
