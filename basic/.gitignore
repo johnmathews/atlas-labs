@@ -1,3 +1,7 @@
+
+*.swo
+*.swp
+
 # Logs
 logs
 *.log
