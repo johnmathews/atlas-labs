@@ -12,12 +12,11 @@ ga('send', 'pageview');
     <!-- End Google Analytics -->
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <meta name="description" content="John Mathews is a freelance data scientist and machine learning engineer"> -->
     <meta name="author" content="John Mathews">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>a coworking space</title> 
+    <title>coworking for makers in Haarlem</title> 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -59,8 +58,8 @@ ga('send', 'pageview');
       </nav>
     </div>
 
-    <section class="video-container mx-auto">
-      <video class="video" autoplay loop muted playsinline>
+    <section class="video-container d-flex">
+      <video class="video " autoplay loop muted playsinline>
         <source src="static/videos/waterfall_low_reverse.mp4" type="video/mp4">
       </video>
 
@@ -70,56 +69,82 @@ ga('send', 'pageview');
     </section>
 
     <div id="content" class="d-flex column">
-      <div id="inner-content" class="col-6 mx-auto">
+      <div id="inner-content" class="pt-5 col-6 mx-auto">
         <h2 id="who-we-are">Who we are</h2>
-        <p>The Haarlem Office is bringing makers, entrepreneurs, hackers,
-        and founders together to create a new coworking community in a modern
-        and well designed office that faciliates and inspires success.</p>
+        <p>
+        The Haarlem Office is a community of makers and entrepreneurs, hackers
+        and founders, sharing ideas and supporting our pursuits. We offer a modern
+        and well designed office that faciliates and inspires success.
+        </p>
 
         <h2 id='membership'>Membership</h2>
-        <p>Our members are ...</p>
+        <p>
+        Membership is open to anyone who wants to be creative or
+        entrepreunerial. We'd like to meet you first to
+        hear what your ambitions and expectations are. We'd like to know how
+        you'll contribute, and a good book you'd recommend to others.
+        </p>
 
         <h2 id='events'>Events</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit fringilla at, maximus eget arcu.  </p>
+        <p>
+        7 Feb 2020 - 'How to bootstrap for success'
+        20 Feb 2020 - 'Marketing with no money'
+        </p>
 
         <h2 id="features">Features</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque accumsan quis urna sed imperdiet. Quisque sapien libero, bibendum quis pretium </p>
+        <p>
+        A warm, bright and light office space with:
+        <ul>
+         <li>good coffee</li>
+         <li>microwave</li>
+         <li>kettle</li>
+         <li>fridge</li>
+         <li>free parking</li>
+         <li>central location</li>
+         <li>meeting room</li>
+         <li>height adjustable office chairs</li>
+         <li>large tables</li>
+         <li>fast internet</li>
+         <li>out of hours access</li>
+        </ul>
+        </p>
 
-        <h2 id="pricing">Pricing</h2>
-        <table class="table">
+        <h2 id="pricing"></br>Pricing</h2>
+        <table class="mx-auto table col-5">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Days per Week</th>
+              <th scope="col">Price (excl. VAT)</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>€70</td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>€120</td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
+              <td>€150</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>€170</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>€200</td>
             </tr>
           </tbody>
         </table>
+        <br>
 
-        <footer class="footer bg-transparant text-center w-100">
-          <span class="text-dark" >footer text</span>
+        <footer class="footer pt-5 bg-transparant text-center w-100">
+          <span class="text-dark" ><p>&copy; 2019 HaarlemOffice.com</p></span>
         </footer>
       </div>
     </div>
@@ -141,11 +166,10 @@ ga('send', 'pageview');
   <script>
     const headlineTimerInMilliseconds = 2000;
     const headlineText = [
-      'a place to create',
-      'and to build',
-      'a community to belong to',
-      'and contribute to',
-      'an entrepreunerial state of mind'
+      'an entrepreunerial attitude and perspective',
+      'a place to create and to build',
+      'a community to contribute to',
+      'opening Febuary 2020' 
     ];
 
     let currentHeadlineIndex = 0;
@@ -153,7 +177,7 @@ ga('send', 'pageview');
 
     setInterval(function changeHeadline() {
       if (currentHeadlineIndex === (headlineText.length - 1)) {
-        currentHeadlineIndex = 0; // Resets the text to the first entry.
+        currentHeadlineIndex = currentHeadlineIndex; // Resets the text to the first entry.
       } else {
         currentHeadlineIndex++;
       }

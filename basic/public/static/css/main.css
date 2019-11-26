@@ -15,6 +15,7 @@ html, body {
 .video-container {
   /* width: 100%; */
   position: relative;
+  background-color: #ebebeb;
 }
 
 .video-container video {
@@ -22,12 +23,13 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0;
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
   /* width: 100%; */
-  height: 100vh;
+  height: calc(100vh - 2*53px);
 }
 
 .video {
+  margin: auto;
 }
 
 .headline-container {
@@ -38,6 +40,10 @@ html, body {
   justify-content: center;
   width: 100%;
   top: 50%;
+}
+
+.navbar {
+  background-color: #ebebeb !important;
 }
 
 .headline-container h2 {
@@ -132,6 +138,7 @@ body {
 #content {
   min-height: 90vh;
   z-index: 2;
+  background-color: #ebebeb;
 }
 
 
