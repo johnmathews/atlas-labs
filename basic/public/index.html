@@ -22,8 +22,8 @@ ga('send', 'pageview');
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="static/custom.css" rel="stylesheet">
-    <link href="static/vid.js" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+    <link href="static/js/vid.js" rel="javascript">
   </head>
 
   <body>
@@ -57,33 +57,29 @@ ga('send', 'pageview');
           </ul>
         </div>
       </nav>
-
-      <!-- [> The video <] -->
-      <!-- <video autoplay muted loop playsinline id="VideoBG"> -->
-      <!--   <source src="static/site.mp4" type="video/mp4"> -->
-      <!-- </video> -->
-
-
-      <video autoplay loop muted playsinline id="hero-vid" class="visible-desktop" >
-        <source src="static/waterfall.mp4" type="video/mp4">
-      </video>
-
-      <div id="state" class="visible-desktop">
-        <h2 class="mt-lg-5 pt-lg-5 my-5 py-2 flex-fill lead text-center " id="headline"> <span class="animate" ></span>.</h2>
-      </div>
     </div>
 
+    <section class="video-container">
+      <video autoplay loop muted playsinline>
+        <source src="static/videos/waterfall_low_reverse.mp4" type="video/mp4">
+      </video>
+
+      <div class="headline-container">
+        <h2 id="headline"></h2>
+      </div>
+    </section>
+
     <div id="content">
-      <H2 id='membership'>Membership</H2>
+      <h2 id='membership'>Membership</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque accumsan quis urna sed imperdiet. Quisque sapien libero, bibendum quis </p>
 
-      <H2 id='events'>Events</H2>
+      <h2 id='events'>Events</h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit fringilla at, maximus eget arcu.  </p>
 
-      <H2 id="features">Features</H2>
+      <h2 id="features">Features</h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque accumsan quis urna sed imperdiet. Quisque sapien libero, bibendum quis pretium </p>
 
-      <H2 id="pricing">Pricing</H2>
+      <h2 id="pricing">Pricing</h2>
       <table class="table">
         <thead>
           <tr>
@@ -117,7 +113,7 @@ ga('send', 'pageview');
       </table>
 
       <p></p>
-      <H2 id="about">About</H2>
+      <h2 id="about">About</h2>
       <p>Here we explain something derived from our mission thesis, but less technical, more catchy. short.</p>
 
       <footer class="footer bg-transparant text-center w-100">
@@ -139,7 +135,28 @@ ga('send', 'pageview');
       https://firebase.google.com/docs/web/setup#available-libraries -->
       <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
   <script>
-  
+    const headlineTimerInMilliseconds = 2000;
+    const headlineText = [
+      'a place to create',
+      'and to build',
+      'a community to belong to',
+      'and contribute to',
+      'an entrepreunerial state of mind'
+    ];
+
+    let currentHeadlineIndex = 0;
+    document.getElementById('headline').innerHTML = headlineText[currentHeadlineIndex];
+
+    setInterval(function changeHeadline() {
+      if (currentHeadlineIndex === (headlineText.length - 1)) {
+        currentHeadlineIndex = 0; // Resets the text to the first entry.
+      } else {
+        currentHeadlineIndex++;
+      }
+
+      document.getElementById('headline').innerHTML = headlineText[currentHeadlineIndex];
+    }, headlineTimerInMilliseconds);
+
     // Your web app's Firebase configuration
     var firebaseConfig = {
       apiKey: "AIzaSyBVB8MV1go595okbs28Gru76fyBRsogOgM",
@@ -154,7 +171,6 @@ ga('send', 'pageview');
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
-  
   </script>
   </body>
 </html>
