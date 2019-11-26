@@ -1,8 +1,19 @@
 # Mission
-We want to create the best coworking space in Haarlem. We also want to create a startup hub and community of makers that achieve more together than they could alone. We want to reshape expectations about how entrepreuners and investors can work together. We want to create a comfortable and productive environment for founders, freelancers and makers. We want to create a safe place to learn, test ideas and ask for help. We want to create a community that people are proud of and consider precious. We want to have a strong network of vouched for, ambitous and experienced investors and business mentors who can help and enable our makers, founders, entrepreneurs to have the most positive impact possible. 
+We want to create: 
+- the best coworking space in Haarlem
+- a community of makers that achieve more together than they could alone. 
+- new expectations about how entrepreuners and investors can work together. 
+- an energetic, efficient and productive environment for founders, freelancers and makers. 
+- a safe place to learn, test ideas and ask for help. 
+- a community that people are proud of and consider precious. 
+- a strong network of vouched for, ambitous and experienced investors and business mentors who can help and enable our makers, founders and entrepreneurs to have the most positive impact possible. 
 
 ## Why
-We believe that creating is a fulfilling and beneficial pursuit, and that being empowered to create, solve problems and improve our world in some way is both important and hard. We want to make it easier. We want to bring it within reach on the basis of merit alone.
+We believe that:
+- creating is a fulfilling and beneficial pursuit
+- being empowered to create, solve problems and improve our world in some way is both important and hard. 
+
+We want to make it easier. We want to bring it within the reach of small teams on the basis of merit alone.
 
 ## Why now
 Because the internet has made it possible to learn and acquire skills. Because the internet has made it possible to deliver products at scale with low capital costs. Because remote working is becoming more common and the market for flex working spaces is growing. Because people need to come together and share the same space to inspire and encourage each other and to generate better ideas and solutions to hard problems.
