@@ -23,7 +23,7 @@ ga('send', 'pageview');
 
     <!-- Custom styles for this template -->
     <link href="static/css/main.css" rel="stylesheet">
-    <link href="static/js/vid.js" rel="javascript">
+    <!-- <link href="static/js/vid.js" rel="javascript"> -->
   </head>
 
   <body>
@@ -40,27 +40,27 @@ ga('send', 'pageview');
               <a class="nav-link" href="#overlay">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link " href="#who-we-are">Who we are</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#membership">Membership</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disaled" href="#events">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#about">About</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
 
-    <section class="video-container">
-      <video autoplay loop muted playsinline>
+    <section class="video-container mx-auto">
+      <video class="video" autoplay loop muted playsinline>
         <source src="static/videos/waterfall_low_reverse.mp4" type="video/mp4">
       </video>
 
@@ -69,56 +69,59 @@ ga('send', 'pageview');
       </div>
     </section>
 
-    <div id="content">
-      <h2 id='membership'>Membership</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque accumsan quis urna sed imperdiet. Quisque sapien libero, bibendum quis </p>
+    <div id="content" class="d-flex column">
+      <div id="inner-content" class="col-6 mx-auto">
+        <h2 id="who-we-are">Who we are</h2>
+        <p>The Haarlem Office is bringing makers, entrepreneurs, hackers,
+        and founders together to create a new coworking community in a modern
+        and well designed office that faciliates and inspires success.</p>
 
-      <h2 id='events'>Events</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit fringilla at, maximus eget arcu.  </p>
+        <h2 id='membership'>Membership</h2>
+        <p>Our members are ...</p>
 
-      <h2 id="features">Features</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque accumsan quis urna sed imperdiet. Quisque sapien libero, bibendum quis pretium </p>
+        <h2 id='events'>Events</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit fringilla at, maximus eget arcu.  </p>
 
-      <h2 id="pricing">Pricing</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
+        <h2 id="features">Features</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit dolor, feugiat at ante quis, volutpat faucibus sem. Pellentesque accumsan quis urna sed imperdiet. Quisque sapien libero, bibendum quis pretium </p>
 
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+        <h2 id="pricing">Pricing</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
 
-      <p></p>
-      <h2 id="about">About</h2>
-      <p>Here we explain something derived from our mission thesis, but less technical, more catchy. short.</p>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <footer class="footer bg-transparant text-center w-100">
-        <span class="text-dark" >footer text</span>
-      </footer>
+        <footer class="footer bg-transparant text-center w-100">
+          <span class="text-dark" >footer text</span>
+        </footer>
+      </div>
     </div>
 
 
@@ -134,6 +137,7 @@ ga('send', 'pageview');
     <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
       <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+
   <script>
     const headlineTimerInMilliseconds = 2000;
     const headlineText = [

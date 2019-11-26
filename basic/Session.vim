@@ -9,14 +9,17 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +1 index.html
-badd +3 firebase.json
-badd +63 public/index.html
+badd +1 firebase.json
+badd +64 public/index.html
 badd +1 public/static/custom.css
 badd +2 public/static/vid.js
-badd +3 mission-thesis.md
+badd +11 mission-thesis.md
+badd +8 public/static/js/vid.js
+badd +247 public/static/css/main.css
+badd +1 public/static/images/waterfall_placeholder.jpg
 argglobal
 silent! argdel *
-edit mission-thesis.md
+edit public/static/css/main.css
 set splitbelow splitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
@@ -30,11 +33,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 11 - ((10 * winheight(0) + 17) / 35)
+let s:l = 22 - ((20 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-11
+22
 normal! 0
 tabnext 1
 if exists('s:wipebuf')
