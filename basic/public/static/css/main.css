@@ -12,20 +12,42 @@ html, body {
 /* Richard's stuff */
 /* Video section */
 /* -------------------------------------------------- */
-.video-container {
-  /* width: 100%; */
-  position: relative;
-  background-color: #ebebeb;
+@media only screen and (max-width: 991px) {
+
+  .video-container {
+    width: 100%;
+    position: relative;
+    background-color: #ebebeb;
+  }
+
+  .video-container video {
+    background-image: url('../../static/images/waterfall_placeholder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    /* background-color: #ebebeb; */
+    width: 100%;
+  }
+
 }
 
-.video-container video {
-  background-image: url('../../static/images/waterfall_placeholder.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0;
-  /* background-color: #ebebeb; */
-  /* width: 100%; */
-  height: calc(100vh - 2*53px);
+@media only screen and (min-width: 992px) {
+
+  .video-container {
+    /* width: 100%; */
+    position: relative;
+    background-color: #ebebeb;
+  }
+
+  .video-container video {
+    background-image: url('../../static/images/waterfall_placeholder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    /* background-color: #ebebeb; */
+    /* width: 100%; */
+    height: min(calc(100vh - 2*53px), 100vw);
+  }
 }
 
 .video {
