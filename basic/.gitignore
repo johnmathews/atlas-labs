@@ -1,6 +1,8 @@
 
 *.swo
 *.swp
+Session.vim
+
 
 # Logs
 logs
